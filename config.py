@@ -1,2 +1,5 @@
+from datetime import date
+
+
 FREQUENCE = 3  # как часто вводить добавки
-START_DATE = '2024-07-25'
+START_DATE = date.today()
