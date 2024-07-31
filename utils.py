@@ -5,6 +5,7 @@ import pandas as pd
 def determine_order(meals):
     orders = {}
     priority = {
+        "натощак": 0,
         "до завтрака": 1,
         "завтрак": 2,
         "после завтрака": 3,
@@ -13,7 +14,8 @@ def determine_order(meals):
         "после обеда": 6,
         "до ужина": 7,
         "ужин": 8,
-        "после ужина": 9
+        "после ужина": 9,
+        "перед сном": 10
     }
     for meal in meals:
         for key in priority:
